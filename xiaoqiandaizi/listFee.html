@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>帐单列表</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link href="dist/css/bootstrap.css" rel="stylesheet">
+	<script src="dist/js/jquery-3.5.1.min.js"></script>
+	<script src="dist/js/bootstrap.js"></script>
+	<link href="myStyle.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container">
+		<header>
+			<nav class="navbar navbar-default">
+				<!--导航菜单logo、部分--->
+			    <div class="navbar-header">
+					<!--三个横杠-->
+					<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+					    <span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!--logo-->
+					<a href="#" class="navbar-brand">
+						小钱袋子
+					</a>
+				</div>
+				
+				<!--导航菜单展开、部分--->
+				<div class="collapse navbar-collapse" id="menu">
+				    <ul class="nav navbar-nav">
+					    <li class="active"><a href="listFee.html">账单列表</a></li>
+						<li><a href="typeSet.html">分类设置</a></li>
+						<li><a href="paySet.html">支付方式</a></li>
+						<li><a href="analysisFee.html">财务分析</a></li>
+						<li><a href="adminUser.html">帐号管理</a></li>
+						<li><a href="newFee.html">我要记账</a></li>
+						<li><a href="index.html">退出</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<div id="tiShi" class="alert alert-warning">
+		   admin：您好，欢迎使用小钱袋子。您可以使用[筛选账单]功能查看指定日期的账单。(2021-11-11 09:50:34)
+		</div>
+		<main>
+		  <table class="table table-bordered table-hover">
+			  <tr class="bg-info">
+				  <th>时间</th>
+				  <th>类型</th>
+				  <th>账单名称</th>
+				  <th>类别</th>
+				  <th>支付方式</th>
+				  <th>金额</th>
+				  <th>经手人</th>
+				  <th>操作</th>
+			  </tr>
+			  <tr>
+				  <td>2021-11-11</td>
+				  <td><span class="glyphicon glyphicon-plus-sign text-success"></span></td>
+				  <td>aaa</td>
+				  <td>兼职</td>
+				  <td>网上银行</td>
+				  <td class="text-warning">100.00</td>
+				  <td>管理员</td>
+				  <td><span class="glyphicon glyphicon-remove" data-toggle="modal" data-target=".clos"></span>
+					  <span class="glyphicon glyphicon-tags"></span>   <span class="glyphicon glyphicon-plus"></span></td>
+			  </tr>
+			  <tr  class="bg-warning">
+				  <td>2021-11-11</td>
+				  <td><span class="glyphicon glyphicon-minus-sign text-muted"></span></td>
+				  <td>bbb</td>
+				  <td>兼职</td>
+				  <td>网上银行</td>
+				  <td class="text-muted">990.00</td>
+				  <td>管理员</td>
+				  <td><span class="glyphicon glyphicon-remove" data-toggle="modal" data-target=".clos"></span>   <span class="glyphicon glyphicon-tags"></span>   <span class="glyphicon glyphicon-plus"></span></td>
+			  </tr>
+			  <tr>
+				  <td>2021-11-11</td>
+				  <td><span class="glyphicon glyphicon-plus-sign text-success"></span></td>
+				  <td>ccc</td>
+				  <td>兼职</td>
+				  <td>网上银行</td>
+				  <td class="text-warning">500.00</td>
+				  <td>管理员</td>
+				  <td><span class="glyphicon glyphicon-remove" data-toggle="modal" data-target=".clos"></span>   <span class="glyphicon glyphicon-tags"></span>   <span class="glyphicon glyphicon-plus"></span></td>
+			  </tr>
+		  </table>
+			<nav>
+				<ul class="pagination">
+					<li><a href="#">&laquo;</a></li>
+					<li class="active"><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">&raquo;</a></li>
+				</ul>
+			</nav>
+		</main>
+		<footer class="navbar navbar-default text-center">
+			联系作品 版权没有   云计算1班曾美开 196102133120
+		</footer>
+	</div>
+	
+	<!--删除模态弹出窗开始--->
+	<div class="modal fade clos" tabindex="-1" role="dialog">
+	  <div class="modal-dialog modal-sm" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal"></button>
+			<h4 class="modal-title" id="myModalLabel">确认对话框</h4>
+		  </div>
+		  <div class="modal-body">
+			你是否确定删除？
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-default" data-dismiss="modal">取 消</button>
+			<button type="button" class="btn btn-primary" data-dismiss="modal">确 定</button>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	<!--模态弹出窗结束--->
+</body>
+</html>

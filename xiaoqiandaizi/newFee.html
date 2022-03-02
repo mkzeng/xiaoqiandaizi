@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>新增记账</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link href="dist/css/bootstrap.css" rel="stylesheet">
+	<script src="dist/js/jquery-3.5.1.min.js"></script>
+	<script src="dist/js/bootstrap.js"></script>
+	<link href="myStyle.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container">
+		<header>
+			<nav class="navbar navbar-default">
+				<!--导航菜单logo、部分--->
+			    <div class="navbar-header">
+					<!--三个横杠-->
+					<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+					    <span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!--logo-->
+					<a href="#" class="navbar-brand">
+						小钱袋子
+					</a>
+				</div>
+				
+				<!--导航菜单展开、部分--->
+				<div class="collapse navbar-collapse" id="menu">
+				    <ul class="nav navbar-nav">
+					    <li><a href="listFee.html">账单列表</a></li>
+						<li><a href="typeSet.html">分类设置</a></li>
+						<li><a href="paySet.html">支付方式</a></li>
+						<li><a href="analysisFee.html">财务分析</a></li>
+						<li><a href="adminUser.html">帐号管理</a></li>
+						<li class="active"><a href="newFee.html">我要记账</a></li>
+						<li><a href="index.html">退出</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<div id="tiShi" class="alert alert-warning">
+		   admin：您好，欢迎使用小钱袋子。科学理财，从记账开始。快点添加新账单吧。(2021-11-11 08:50:30)
+		</div>
+		<main>
+		   <form class="form-horizontal">
+			  <div class="form-group">
+				<label class="col-sm-3 control-label">账单名称：</label>
+				<div class="col-sm-5">
+				  <input type="text" class="form-control" placeholder="账单名称">
+				</div>
+			  </div>
+			  <div class="form-group">
+				<label class="col-sm-3 control-label">金额：</label>
+				<div class="col-sm-3">
+				  <input type="number" class="form-control">
+				</div>
+			  </div>
+			  <div class="form-group">
+				<label class="col-sm-3 control-label">类别：</label>
+				<div class="col-sm-7">
+				  <select>
+					<option>请选择类别</option>
+					<option>父母给</option>
+					<option>打工挣</option>
+				  </select>
+				</div>
+			  </div>
+			  <div class="form-group">
+				<label class="col-sm-3 control-label">支付方式：</label>
+				<div class="col-sm-7">
+				  <select>
+					<option>现金</option>
+					<option>信用卡</option>
+					<option>支付宝</option>
+				  </select>
+				</div>
+			  </div>
+			  <div class="form-group">
+				<label class="col-sm-3 control-label">经手人：</label>
+				<div class="col-sm-3">
+				  <input type="text" class="form-control" value="admin">
+				</div>
+			  </div>
+			  <div class="form-group">
+				<label class="col-sm-3 control-label">时间：</label>
+				<div class="col-sm-3">
+				  <input type="date" class="form-control">
+				</div>
+			  </div>
+			  <div class="form-group">
+				<label class="col-sm-3 control-label">备注：</label>
+				<div class="col-sm-7">
+				  <textarea rows="6" class="form-control">这里面是备注</textarea>
+				</div>
+			  </div>
+			  <div class="form-group">
+				<div class="col-sm-offset-3 col-sm-7">
+				  <button type="button" class="btn btn-warning" onClick="window.location='listFee.html'">保 存</button>
+				</div>
+			  </div>
+			</form>
+		</main>
+		<footer class="navbar navbar-default text-center">
+			联系作品 版权没有   云计算1班曾美开 196102133120
+		</footer>
+	</div>
+</body>
+</html>

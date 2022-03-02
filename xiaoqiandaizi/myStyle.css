@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background: #fefefe;
+}
+.loginBox{
+	width: 400px;
+	height: 300px;
+	border: #e8e8e8 1px solid;
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform:translate(-50%,-50%);
+	background: #eee;
+	border-radius: 5px;
+}
+
+.logo{
+
+	padding: 0 0 40px 80px;
+}
+.logo:after{
+	content: "";
+	clear: both;
+	display: block;
+}
+.logo div:nth-child(1){
+	color:darkgreen;
+	font: bold 30px "微软雅黑";
+	float: left;
+}
+.logo div:nth-child(2){
+	color:darkgray;
+	font: bold 12px "微软雅黑";
+	float: left;
+	padding: 0 0 0 12px;
+}
+/*登录输入框宽度重置*/
+.loginIptWidth{
+	width: 60%;
+}
+/* 进度条单元格高度 */
+.progressWidth{
+	width: 60%;
+}
+.picCenter{
+	text-align: center;
+	margin: 0 auto;
+}

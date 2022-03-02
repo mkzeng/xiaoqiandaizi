@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>账务分析</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link href="dist/css/bootstrap.css" rel="stylesheet">
+	<script src="dist/js/jquery-3.5.1.min.js"></script>
+	<script src="dist/js/bootstrap.js"></script>
+	<link href="myStyle.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container">
+		<header>
+			<nav class="navbar navbar-default">
+				<!--导航菜单logo、部分--->
+			    <div class="navbar-header">
+					<!--三个横杠-->
+					<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+					    <span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!--logo-->
+					<a href="#" class="navbar-brand">
+						小钱袋子
+					</a>
+				</div>
+				
+				<!--导航菜单展开、部分--->
+				<div class="collapse navbar-collapse" id="menu">
+				    <ul class="nav navbar-nav">
+					    <li><a href="listFee.html">账单列表</a></li>
+						<li><a href="typeSet.html">分类设置</a></li>
+						<li><a href="paySet.html">支付方式</a></li>
+						<li class="active"><a href="analysisFee.html">财务分析</a></li>
+						<li><a href="adminUser.html">帐号管理</a></li>
+						<li><a href="newFee.html">我要记账</a></li>
+						<li><a href="index.html">退出</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<div id="tiShi" class="alert alert-warning">
+		   admin：您好，欢迎使用小钱袋子。科学理财，从记账开始。快点添加新账单吧。(2021-11-11 08:50:30)
+		</div>
+		<main>
+            <!-- 胶囊导航开始 -->
+            <ul class="nav nav-tabs">
+                <li><a href="#">全部统计</a></li>
+                <li><a href="#">月统计</a></li>
+                <li><a href="#">日统计</a></li>
+                <li><a href="#">年统计</a></li>
+                <li><a href="#">个性统计</a></li>
+            </ul>
+            <!-- 结束 -->
+            <br>
+            <!-- 带表格的pannel面板 -->
+            <div class="panel panel-default">
+                <div class="panel-heading">统计概况</div>
+                <table class="table">
+                    <tr>
+                        <td>所有总收入：<span class="text-danger">3,041.20</span></td>
+                        <td>所有借入：.00</td>
+                        <td>所有负债：.00</td>
+                    </tr>
+                    <tr>
+                        <td>所有总支出：<span class="text-success">1,440.20</span></td>
+                        <td>所有借出：.00</td>
+                        <td>所有结余：<span class="text-info">1,601.00</span></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">统计概况</div>
+                <table class="table">
+                    <tr>
+                        <td>父母给：1,841.20 / 60.54% <span class="badge">2</span><td>
+                        <td class="progressWidth">
+                            <div class="progress">
+                                <div class="progerss-bar progerss-bar-stripsd" style="width: 60.54%;">60.54%</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>长辈给：1,000.00 / 32.88% <span class="badge">1</span></td>
+                        <td class="progressWidth">
+                            <div class="progress">
+                                <div class="progerss-bar progerss-bar-stripsd" style="width: 32.88%;">32.88%</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>兼职：200.00 / 6.58% <span class="badge">1</span></td>
+                        <td class="progressWidth">
+                            <div class="progress">
+                                <div class="progerss-bar progerss-bar-stripsd" style="width: 6.58%;">6.58%</div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+		</main>
+		<footer class="navbar navbar-default text-center">
+			联系作品 版权没有   云计算1班曾美开 196102133120
+		</footer>
+	</div>
+</body>
+</html>
